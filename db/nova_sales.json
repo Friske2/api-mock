@@ -1,362 +1,366 @@
 {
-  "billingAddress": {
-    "id": 126,
-    "schema": [{
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine1",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ชื่อผู้รับ"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine2",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "เบอร์ติดต่อ"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine3",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "บ้านเลขที่,หมู่บ้าน"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine4",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ถนน"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine5",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ซอย"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine6",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "หมู่ที่"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "prop": "homeAddressId",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "style": {
-          "width": "100%"
+  "layoutCode": "TELSAL",
+  "id": 7,
+  "newSale": {
+    "billingAddress": {
+      "id": 126,
+      "schema": [{
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine1",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ชื่อผู้รับ"
         },
-        "filterable": true,
-        "collapse-tags": true
-      },
-      "is": "field-cascader",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": "http://172.18.60.4:8009/utility/v2/address/childrenForm",
-      "labelPath": "label",
-      "valuePath": "value",
-      "defaultValue": null,
-      "paramsBy": null
-    }],
-    "title": "Billing Address",
-    "type": "AppForm"
-  },
-  "dynamic": [{
-    "title": "ใครรับประทานสินค้าในครั้งนี้",
-    "type": "Questionaire",
-    "typeId": 3,
-    "code": "Nova Q1",
-    "schema": [{
-      "answer": [],
-      "id": 176,
-      "is": "field-radio",
-      "lookupCode": null,
-      "no": "1",
-      "prop": "stringProperty0002",
-      "questionName": "Option 1"
-    }, {
-      "answer": [],
-      "id": 177,
-      "is": "field-radio",
-      "lookupCode": null,
-      "no": "2",
-      "prop": "stringProperty0003",
-      "questionName": "Gender"
-    }, {
-      "answer": [{
-        "label": "Yes",
-        "value": "y"
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
       }, {
-        "label": "No",
-        "value": "n"
-      }],
-      "id": 178,
-      "lookupCode": null,
-      "no": "3",
-      "prop": "numberProperty0001",
-      "questionName": "Age",
-      "when": [{
-        "schema": [],
-        "answer": "Y"
-      }]
-    }, {
-      "answer": [{
-        "label": "YES",
-        "value": "Y"
-      }, {
-        "label": "NO",
-        "value": "N"
-      }],
-      "id": 179,
-      "is": "field-radio",
-      "lookupCode": "yesNo",
-      "no": "4",
-      "prop": "stringProperty0004",
-      "questionName": "Congenital Disease"
-    }],
-    "max": null,
-    "min": null,
-    "id": 1039
-  }],
-  "payment": {
-    "id": 128,
-    "schema": [{
-      "label": null,
-      "span": null,
-      "prop": "payorHomePhoneNo",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ระบุ เลขที่ใบกำกับภาษี"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": "label",
-      "valuePath": "value",
-      "defaultValue": null,
-      "refProp": "payorType",
-      "isShow": "payorType = 'other'"
-    }, {
-      "id": 54,
-      "label": "เบอร์มือถือ",
-      "span": 10,
-      "prop": "payorMobilePhoneCountryCode",
-      "required": true,
-      "lookupCode": null,
-      "attr": {},
-      "is": "field-select",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": "http://172.18.60.4:8009/utility/v2/country-code",
-      "labelPath": "value",
-      "valuePath": "value",
-      "defaultValue": null,
-      "refProp": "payorType",
-      "isShow": "payorType = 'other'",
-      "paramsBy": null
-    }],
-    "title": "Payment",
-    "type": "AppForm"
-  },
-  "schema": [],
-  "shippingAddress": {
-    "id": 127,
-    "schema": [{
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine1",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ชื่อผู้รับ"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine2",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "เบอร์ติดต่อ"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine3",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "บ้านเลขที่,หมู่บ้าน"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine4",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ถนน"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine5",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "ซอย"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "label": null,
-      "span": null,
-      "prop": "homeAddressLine6",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "placeholder": "หมู่ที่"
-      },
-      "is": "el-input",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": null,
-      "labelPath": null,
-      "valuePath": null,
-      "defaultValue": null
-    }, {
-      "prop": "homeAddressId",
-      "required": true,
-      "lookupCode": null,
-      "attr": {
-        "style": {
-          "width": "100%"
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine2",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "เบอร์ติดต่อ"
         },
-        "filterable": true,
-        "collapse-tags": true
-      },
-      "is": "field-cascader",
-      "descriptionProp": null,
-      "withoutDescription": null,
-      "options": null,
-      "path": "http://172.18.60.4:8009/utility/v2/address/childrenForm",
-      "labelPath": "label",
-      "valuePath": "value",
-      "defaultValue": null,
-      "paramsBy": null
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine3",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "บ้านเลขที่,หมู่บ้าน"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine4",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ถนน"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine5",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ซอย"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine6",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "หมู่ที่"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "prop": "homeAddressId",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "style": {
+            "width": "100%"
+          },
+          "filterable": true,
+          "collapse-tags": true
+        },
+        "is": "field-cascader",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": "http://172.18.60.4:8009/utility/v2/address/childrenForm",
+        "labelPath": "label",
+        "valuePath": "value",
+        "defaultValue": null,
+        "paramsBy": null
+      }],
+      "title": "Billing Address",
+      "type": "AppForm"
+    },
+    "dynamic": [{
+      "title": "ใครรับประทานสินค้าในครั้งนี้",
+      "type": "Questionaire",
+      "typeId": 3,
+      "code": "Nova Q1",
+      "schema": [{
+        "answer": [],
+        "id": 176,
+        "is": "field-radio",
+        "lookupCode": null,
+        "no": "1",
+        "prop": "stringProperty0002",
+        "questionName": "Option 1"
+      }, {
+        "answer": [],
+        "id": 177,
+        "is": "field-radio",
+        "lookupCode": null,
+        "no": "2",
+        "prop": "stringProperty0003",
+        "questionName": "Gender"
+      }, {
+        "answer": [{
+          "label": "Yes",
+          "value": "y"
+        }, {
+          "label": "No",
+          "value": "n"
+        }],
+        "id": 178,
+        "lookupCode": null,
+        "no": "3",
+        "prop": "numberProperty0001",
+        "questionName": "Age",
+        "when": [{
+          "schema": [],
+          "answer": "Y"
+        }]
+      }, {
+        "answer": [{
+          "label": "YES",
+          "value": "Y"
+        }, {
+          "label": "NO",
+          "value": "N"
+        }],
+        "id": 179,
+        "is": "field-radio",
+        "lookupCode": "yesNo",
+        "no": "4",
+        "prop": "stringProperty0004",
+        "questionName": "Congenital Disease"
+      }],
+      "max": null,
+      "min": null,
+      "id": 1039
     }],
-    "title": "Shipping Address",
+    "payment": {
+      "id": 128,
+      "schema": [{
+        "label": null,
+        "span": null,
+        "prop": "payorHomePhoneNo",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ระบุ เลขที่ใบกำกับภาษี"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": "label",
+        "valuePath": "value",
+        "defaultValue": null,
+        "refProp": "payorType",
+        "isShow": "payorType = 'other'"
+      }, {
+        "id": 54,
+        "label": "เบอร์มือถือ",
+        "span": 10,
+        "prop": "payorMobilePhoneCountryCode",
+        "required": true,
+        "lookupCode": null,
+        "attr": {},
+        "is": "field-select",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": "http://172.18.60.4:8009/utility/v2/country-code",
+        "labelPath": "value",
+        "valuePath": "value",
+        "defaultValue": null,
+        "refProp": "payorType",
+        "isShow": "payorType = 'other'",
+        "paramsBy": null
+      }],
+      "title": "Payment",
+      "type": "AppForm"
+    },
+    "schema": [],
+    "shippingAddress": {
+      "id": 127,
+      "schema": [{
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine1",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ชื่อผู้รับ"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine2",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "เบอร์ติดต่อ"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine3",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "บ้านเลขที่,หมู่บ้าน"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine4",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ถนน"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine5",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "ซอย"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "label": null,
+        "span": null,
+        "prop": "homeAddressLine6",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "placeholder": "หมู่ที่"
+        },
+        "is": "el-input",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": null,
+        "labelPath": null,
+        "valuePath": null,
+        "defaultValue": null
+      }, {
+        "prop": "homeAddressId",
+        "required": true,
+        "lookupCode": null,
+        "attr": {
+          "style": {
+            "width": "100%"
+          },
+          "filterable": true,
+          "collapse-tags": true
+        },
+        "is": "field-cascader",
+        "descriptionProp": null,
+        "withoutDescription": null,
+        "options": null,
+        "path": "http://172.18.60.4:8009/utility/v2/address/childrenForm",
+        "labelPath": "label",
+        "valuePath": "value",
+        "defaultValue": null,
+        "paramsBy": null
+      }],
+      "title": "Shipping Address",
+      "type": "AppForm"
+    },
+    "title": "Add Sale",
     "type": "AppForm"
-  },
-  "title": "Add Sale",
-  "type": "AppForm"
+  }
 }
