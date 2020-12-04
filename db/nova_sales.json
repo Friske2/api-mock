@@ -1,8 +1,7 @@
-
 {
   "layoutCode": "TELSAL",
   "id": 7,
-  "newSale":{
+  "newSale": {
     "billingAddress": {
       "id": 126,
       "schema": [{
@@ -132,8 +131,8 @@
       "type": "AppForm"
     },
     "dynamic": [{
-      "title": "Health Question",
-      "type": "Questionaire",
+      "title": "ใครรับประทานสินค้าในครั้งนี้",
+      "type": "subForm",
       "typeId": 3,
       "code": "Nova Q1",
       "schema": [{
@@ -141,37 +140,37 @@
         "is": "el-input-number",
         "lookupCode": null,
         "prop": "stringProperty0001",
-        "questionName": "อายุของผู้รับประทาน"
-      },
-      {
+        "label": "อายุของผู้รับประทาน",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "field-radio",
         "lookupCode": "sale_gender",
         "prop": "stringProperty0002",
-        "questionName": "เพศ"
-      }, 
-      {
+        "label": "เพศ",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "el-date-picker",
         "lookupCode": null,
         "prop": "stringProperty0003",
-        "questionName": "วัน เดือน ปี เกิด"
-      },
-      {
+        "label": "วัน เดือน ปี เกิด",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "el-input-number",
         "lookupCode": null,
         "prop": "stringProperty0004",
-        "questionName": "น้ำหนัก"
-      },
-      {
+        "label": "น้ำหนัก",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "el-input-number",
         "lookupCode": null,
         "prop": "stringProperty0005",
-        "questionName": "ส่วนสูง"
-      },
-      {
+        "label": "ส่วนสูง",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "field-cascader",
         "lookupCode": null,
@@ -179,27 +178,27 @@
         "labelPath": "label",
         "valuePath": "value",
         "prop": "stringProperty0006",
-        "questionName": "อาชีพ"
-      },
-      {
+        "label": "อาชีพ",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "field-checkbox",
         "lookupCode": null,
         "labelPath": "label",
         "valuePath": "value",
         "prop": "stringProperty0007",
-        "questionName": "อาชีพ"
-      },
-      {
+        "label": "ผู้ทานมีโรคประจำตัว",
+        "attr": {}
+      }, {
         "answer": [],
         "is": "field-radio",
         "lookupCode": null,
         "labelPath": "label",
         "valuePath": "value",
         "prop": "stringProperty0008",
-        "questionName": "อาชีพ"
-      }
-    ],
+        "label": "ผู้บริโภค",
+        "attr": {}
+      }],
       "max": null,
       "min": null,
       "id": 1039
@@ -224,34 +223,39 @@
         "valuePath": "value",
         "defaultValue": null,
         "refProp": "payorType"
-      }, 
-      {
+      }, {
         "label": null,
         "span": null,
         "prop": "paymentMethodId",
         "required": true,
         "lookupCode": null,
         "attr": {
-          "placeholder": "รูปแบบการชำระเงิน"
+          "placeholder": "รูปแบบการชำระเงิน",
+          "style": {
+            "width": "100%"
+          }
         },
         "is": "field-select",
         "descriptionProp": null,
         "withoutDescription": null,
         "options": null,
         "path": "http://172.18.60.4:8003/marketing/v2/payment-method/dropdown/product/42",
-        "labelPath": "label",
-        "valuePath": "value",
+        "labelPath": "name",
+        "valuePath": "id",
         "defaultValue": null,
         "refProp": null,
         "paramsBy": null
-      },
-      {
+      }, {
         "label": null,
         "span": null,
         "prop": null,
         "required": true,
         "lookupCode": null,
-        "attr": {},
+        "attr": {
+          "style": {
+            "width": "100%"
+          }
+        },
         "is": "field-select",
         "descriptionProp": null,
         "withoutDescription": null,
@@ -262,8 +266,7 @@
         "defaultValue": null,
         "refProp": "paymentMethodId",
         "paramsBy": "paymentMethodId"
-      },
-      {
+      }, {
         "label": null,
         "span": null,
         "prop": null,
@@ -280,14 +283,17 @@
         "defaultValue": null,
         "refProp": "paymentMethodId",
         "paramsBy": null
-      },
-      {
+      }, {
         "label": null,
         "span": null,
         "prop": null,
         "required": true,
         "lookupCode": null,
-        "attr": {},
+        "attr": {
+          "style": {
+            "width": "100%"
+          }
+        },
         "is": "el-date-picker",
         "descriptionProp": null,
         "withoutDescription": null,
@@ -298,14 +304,15 @@
         "defaultValue": null,
         "refProp": "paymentMethodId",
         "paramsBy": null
-      },
-      {
+      }, {
         "label": null,
         "span": null,
         "prop": null,
         "required": true,
         "lookupCode": null,
-        "attr": {},
+        "attr": {
+          "action": "http://172.18.60.4:8009/api/v1/utility/file/upload"
+        },
         "is": "field-upload",
         "descriptionProp": null,
         "withoutDescription": null,
@@ -314,15 +321,14 @@
         "defaultValue": null,
         "refProp": "paymentMethodId",
         "paramsBy": null
-      },
-      {
+      }, {
         "label": null,
         "span": null,
         "prop": null,
         "required": true,
         "lookupCode": null,
         "attr": {
-          "type":"textarea",
+          "type": "textarea",
           "placeholder": "Note"
         },
         "is": "el-input",
@@ -331,8 +337,7 @@
         "options": null,
         "path": null,
         "defaultValue": null
-      }
-    ],
+      }],
       "title": "Payment",
       "type": "AppForm"
     },
