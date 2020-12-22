@@ -1,0 +1,90 @@
+{
+  "listOppTranItem": [
+    {
+      "checked": true,
+      "code": "T0000001",
+      "customerId": "8802980d-1689-46c4-83a6-10398664c55e",
+      "enable": true,
+      "id": 116,
+      "isDelete": false,
+      "name": "กาแฟเครซ เคนย่า",
+      "price": 2000,
+      "productId": 116,
+      "productName": "กาแฟเครซ เคนย่า",
+      "product_category_id": 7,
+      "qty": 1,
+      "remain": 9999,
+      "thumbnail": "8666bb33-1329-4a07-9295-75760a08a723",
+      "unit_code": "กล่อง",
+      "use_remain": 0
+    },
+    {
+      "checked": true,
+      "code": "T0000002",
+      "customerId": "8802980d-1689-46c4-83a6-10398664c55e",
+      "enable": true,
+      "id": 117,
+      "isDelete": false,
+      "name": "กาแฟเครซ นัมเบอร์มิกซ์",
+      "price": 2000,
+      "productId": 117,
+      "productName": "กาแฟเครซ นัมเบอร์มิกซ์",
+      "product_category_id": 7,
+      "qty": 1,
+      "remain": 9999,
+      "thumbnail": "8696385e-d137-4719-b940-bc261fdd7293",
+      "type": "ADD",
+      "unit_code": "กล่อง",
+      "use_remain": 0
+    }
+  ],
+  "opportunityTranAppFormValue": {
+    "firstName": "0894852400 ",
+    "homePhoneNo": null,
+    "homeAddressLine1": "592/2",
+    "homeAddressLine2": null,
+    "homeAddressLine3": "22",
+    "homeAddressLine4": "33",
+    "homeAddressId": 1235,
+    "payorFirstName": "0894852400 ",
+    "payorHomePhoneNo": null,
+    "payorAddressLine1": "592/2",
+    "payorAddressLine2": null,
+    "payorAddressLine3": "22",
+    "payorAddressLine4": "33",
+    "payorAddressId": 1235,
+    "customField01": "1234",
+    "paymentMethodId": 2,
+    "traceNo": "4321",
+    "payorDob": "2020-12-21T17:00:00.000Z",
+    "customField02": "ba294a44-c04a-4b98-8b2e-7a36feef406b",
+    "customField01Description": "-",
+    "paymentMethodIdDescription": "บัตรเครดิต",
+    "appFormId": 7
+  },
+  "opportunityTranStatusId": 2,
+  "listDynamicFormData": [
+    {
+      "data": [
+        {
+          "stringProperty0001": 10,
+          "stringProperty0002": "M",
+          "stringProperty0003": "2020-12-21T17:00:00.000Z",
+          "stringProperty0004": 70,
+          "stringProperty0005": 175,
+          "stringProperty0006": 1006,
+          "stringProperty0007": "N,H",
+          "stringProperty0008": "M",
+          "stringProperty0002Description": "ชาย",
+          "stringProperty0008Description": "ทานเอง",
+          "dynamicFormId": 1039,
+          "userId": "aff39762-865e-4ad6-b266-d0cb2f1adc9b"
+        }
+      ],
+      "id": 1039,
+      "code": "Nova Q1",
+      "type": 3
+    }
+  ],
+  "opportunityTranId": "10f264b8-5e99-489c-8dd2-e09006a6243f"
+}
